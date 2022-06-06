@@ -1,25 +1,19 @@
 import './cardlist.styles.scss'
+import Card from '../card/card.component';
 
-const CardList = () => {
-    return ( 
-        <div className="red">
-
-            <div className="card">
-                {/* img */}
-                <div>
-                    <h2>Hats</h2>
-                    <p>Shop Now</p>
-                </div>
-            </div>
-            <div className="card">
-                {/* img */}
-                <div>
-                    <h2>Hats</h2>
-                    <p>Shop Now</p>
-                </div>
-            </div>
-
+// loop through all cards
+const CardList = ({cardlist}) => {  
+    return (
+        <div>
+        {
+            cardlist.map(({name,img,id})=>{
+                return(
+                    <Card key={id} name={name} img={img} />
+                )
+            })
+        }
         </div>
+  
      );
 }
  
