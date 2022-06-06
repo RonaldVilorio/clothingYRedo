@@ -1,11 +1,12 @@
 
-const Card = ({name,img}) => {
-    console.log(name)
+const Card = ({title,imageUrl}) => {
     return ( 
-        <div className="card">
-            {/* img */}
+        <div className="category-container">
+            <div className="background-image" style={{
+                backgroundImage: `url(${imageUrl})`
+                }} />
             <div>
-                <h2>{name}</h2>
+                <h2>{title}</h2>
                 <p>Shop Now</p>
             </div>
         </div>

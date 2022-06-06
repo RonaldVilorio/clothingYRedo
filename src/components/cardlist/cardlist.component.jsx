@@ -4,16 +4,15 @@ import Card from '../card/card.component';
 // loop through all cards
 const CardList = ({cardlist}) => {  
     return (
-        <div>
+        <div className='categories-container'>
         {
-            cardlist.map(({name,img,id})=>{
+            cardlist.map(({title,imageUrl,id})=>{
                 return(
-                    <Card key={id} name={name} img={img} />
+                    <Card key={id} title={title} imageUrl={imageUrl} />
                 )
             })
         }
         </div>
-  
      );
 }
  
