@@ -6,9 +6,9 @@ const CardList = ({cardlist}) => {
     return (
         <div className='categories-container'>
         {
-            cardlist.map(({title,imageUrl,id})=>{
+            cardlist.map((card)=>{
                 return(
-                    <Card key={id} title={title} imageUrl={imageUrl} />
+                    <Card key={card.id} card={card} />
                 )
             })
         }

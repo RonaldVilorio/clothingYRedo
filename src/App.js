@@ -32,7 +32,6 @@ const cardlist =[
 const App =()=> {
   return (
     <div>
-      Hello
       <CardList cardlist={cardlist}/>
     </div>
   );
