@@ -1,11 +1,21 @@
-import { Outlet } from "react-router-dom";
+import { Outlet,NavLink } from "react-router-dom";
+import { Fragment } from "react";
+import { ReactComponent as ClothingLogo } from '../../assets/crown (1).svg';
+import "./navigation.styles.scss"
 
 const Navigation = () => {
     return (
-        <div>
-            <h1>NavBar</h1>
+        <Fragment>
+            <div className="navigation">
+                <NavLink to="/"className="logo-container">
+                    <ClothingLogo className="logo"/>
+                </NavLink>
+                <div className="nav-links-container">
+                    <NavLink to="shop"className="nav-link" >Shop</NavLink>
+                </div>
+            </div>
             <Outlet/>
-        </div>
+        </Fragment>
      );
 }
  

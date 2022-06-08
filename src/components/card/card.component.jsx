@@ -1,6 +1,7 @@
-
+import './card.styles.scss'
 const Card = ({card}) => {
     const {imageUrl,title} = card
+    console.log(imageUrl)
     return ( 
         <div className='category-container'>
             <div className='background-image' style={{

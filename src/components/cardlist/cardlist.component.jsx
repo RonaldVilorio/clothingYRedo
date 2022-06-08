@@ -2,7 +2,7 @@ import './cardlist.styles.scss'
 import Card from '../card/card.component';
 
 // loop through all cards
-const CardList = ({cardlist}) => {  
+const CardList = ({cardlist}) => {
     return (
         <div className='categories-container'>
         {
